@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_ordered: 2021-12-12 15:28:52
+  date_delivered: 2021-12-12 15:28:52
+  lat: 1.5
+  lon: 1.5
+  status: MyString
+  consumer: one
+  supplier: one
+
+two:
+  date_ordered: 2021-12-12 15:28:52
+  date_delivered: 2021-12-12 15:28:52
+  lat: 1.5
+  lon: 1.5
+  status: MyString
+  consumer: two
+  supplier: two
