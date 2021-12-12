@@ -1,3 +1,4 @@
 class ConsumerSerializer < ActiveModel::Serializer
-  attributes :id, :email, :password, :phone
+  attributes :id, :email, :phone
+  has_many :orders
 end

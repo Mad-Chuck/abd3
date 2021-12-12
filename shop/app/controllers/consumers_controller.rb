@@ -1,11 +1,6 @@
 class ConsumersController < ApplicationController
   before_action :set_consumer, only: %i[ show edit update destroy ]
 
-  # GET /consumers or /consumers.json
-  def index
-    @consumers = Consumer.all
-  end
-
   # GET /consumers/1 or /consumers/1.json
   def show
   end
@@ -13,10 +8,6 @@ class ConsumersController < ApplicationController
   # GET /consumers/new
   def new
     @consumer = Consumer.new
-  end
-
-  # GET /consumers/1/edit
-  def edit
   end
 
   # POST /consumers or /consumers.json

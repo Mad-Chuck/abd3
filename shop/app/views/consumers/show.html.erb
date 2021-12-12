@@ -1,19 +1,33 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Historia zamówień</h1>
+
 <p>
-  <strong>Email:</strong>
+  <strong>User:</strong>
   <%= @consumer.email %>
 </p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @consumer.password %>
-</p>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Date ordered</th>
+      <th>Date delivered</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Status</th>
+    </tr>
+  </thead>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @consumer.phone %>
-</p>
-
-<%= link_to 'Edit', edit_consumer_path(@consumer) %> |
-<%= link_to 'Back', consumers_path %>
+  <tbody>
+    <% @consumer.orders.each do |order| %>
+      <tr>
+        <td><%= order.date_ordered %></td>
+        <td><%= order.date_delivered %></td>
+        <td><%= order.lat %></td>
+        <td><%= order.lon %></td>
+        <td><%= order.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
