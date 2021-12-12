@@ -1,2 +1,2 @@
-class Consumer < Person
+class Consumer < ApplicationRecord
 end

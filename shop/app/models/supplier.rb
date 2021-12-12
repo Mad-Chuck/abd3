@@ -1,2 +1,2 @@
-class Supplier < Person
+class Supplier < ApplicationRecord
 end
