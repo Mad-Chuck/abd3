@@ -1,3 +1,3 @@
-class Consumer < ApplicationRecord
-    has_many :orders
+class Consumer < User
+  has_many :orders
 end
